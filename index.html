@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snack Haven - Online Snack Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto Slab', serif; /* Professional Font */
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ffffff 0%, #f4f4f4 100%);
+            color: #333;
+        }
+        header {
+            text-align: center;
+            color: #333;
+            padding: 20px;
+            background-color: #e8eaf6; /* Light indigo background */
+            border-bottom: 3px solid #c5cae9;
+        }
+        nav {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #f4f4f4;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: #5c6bc0;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .video-container {
+            position: relative;
+            width: 100%; /* Ensures container fills the width */
+        }
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-bottom: 3px solid #c5cae9;
+        }
+        .button {
+            position: absolute; /* Absolute positioning inside the container */
+            top: 50%; /* Center vertically */
+            left: 50%; /* Center horizontally */
+            transform: translate(-50%, -50%); /* Align the center of the button with the center of container */
+            display: inline-block;
+            width: 200px;
+            padding: 10px;
+            text-align: center;
+            background-color: #FFC0CB; /* Light pink button */
+            color: #5c6bc0; /* Indigo text */
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            text-decoration: none; /* Remove underline from link */
+        }
+        .button:hover {
+            background-color: #FFB6C1; /* Slightly darker pink for hover */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #FFC0CB; /* Light pink footer */
+            color: white;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            border-top: 3px solid #FFB6C1; /* Slightly darker pink for the border */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Snack Haven</h1>
+        <p>Delight in our exclusive range of gourmet snacks crafted for every palate!</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="content.html">Products</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="LandingVideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <a href="content.html" class="button">Explore Our Products</a>
+    </div>
+    <footer>
+        <p>&copy; 2024 Snack Haven. All rights reserved.</p>
+    </footer>
+</body>
+</html>
